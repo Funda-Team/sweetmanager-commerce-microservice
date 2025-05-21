@@ -2,8 +2,8 @@
 
 namespace CommerceService.Shared.Infrastructure.Persistence.EFC.Repositories
 {
-    public class UnitOfWork(CommerceContext context) : IUnitOfWork
-    {
-        public async Task CommitAsync() => await context.SaveChangesAsync();
-    }
+    //public class UnitOfWork(CommerceContext context) : IUnitOfWork
+    //{
+    //    public async Task CommitAsync() => await context.SaveChangesAsync();
+    //}
 }
