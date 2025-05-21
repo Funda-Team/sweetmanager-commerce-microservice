@@ -7,7 +7,7 @@ namespace CommerceService.Shared.Infrastructure.Persistence.EFC.Repositories
         protected readonly CommerceContext Context = context;
 
         public async Task AddAsync(TEntity entity) => await Context.Set<TEntity>().AddAsync(entity);
-4
+
         public async Task<TEntity?> FindByIdAsync(int id) => await Context.Set<TEntity>().FindAsync(id);
 
         public async Task<IEnumerable<TEntity>> ListAsync() => await Context.Set<TEntity>().ToListAsync();
